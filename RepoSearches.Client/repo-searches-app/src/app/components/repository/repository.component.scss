@@ -1,0 +1,29 @@
+.mat-mdc-list-item {
+      /* border: 1px solid; */
+      width: 15vw;
+      height: 13vw;
+      padding: 30px;
+      overflow: auto;
+      box-shadow: 6px 7px 12px -2px;
+      border-radius: 5px;
+}
+.mat-icon{
+  height: auto;
+  width: auto;
+}
+.mat-icon img {
+  height: 50px;
+}
+
+a:-webkit-any-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+a:-webkit-any-link:hover {
+  color: #406fdb;
+  text-decoration: underline;
+  cursor: pointer;
+
+}

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\**" />
+    <Compile Remove="Helpers\User\**" />
+    <EmbeddedResource Remove="Handlers\**" />
+    <EmbeddedResource Remove="Helpers\User\**" />
+    <None Remove="Handlers\**" />
+    <None Remove="Helpers\User\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.3.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+    <PackageReference Include="TweetinviAPI" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RepoSearches.DAL\RepoSearches.DAL.csproj" />
+    <ProjectReference Include="..\RepoSearches.Models\RepoSearches.Models.csproj" />
+  </ItemGroup>
+
+</Project>

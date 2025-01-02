@@ -1,0 +1,16 @@
+<div>
+  <h1>GitHub Repositories</h1>
+ <div >
+  <nav>
+      <a  routerLink="/login" *ngIf="isLoggedIn" (click)="logout()" ><h2>Logout</h2></a>
+      <a routerLink="/login" *ngIf="!isLoggedIn" ><h2>Login</h2></a>
+    <a routerLink="/register" routerLinkActive="active"><h2>Register</h2></a>
+    <a routerLink="/search" routerLinkActive="active"><h2>Search</h2></a>
+    <a routerLink="/bookmarks" routerLinkActive="active"><h2>Bookmarks</h2></a>
+  </nav>
+ </div>
+  <div class="container">
+      <router-outlet></router-outlet>
+  </div>
+</div>
+

@@ -1,0 +1,26 @@
+nav{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(0 123 255) 35%, rgb(36 35 35) 100%);;
+    display: flex;
+    justify-content: s;
+    align-items: center;
+    padding: 0 10px;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    padding:  10px;
+    border-radius: 5px;
+    background-color: #007bff00;
+    transition: 0.5s;
+    &:hover{
+        background-color: #007bff;
+    }
+    &:active{
+        background-color: #007bff;
+    }
+}
+.container{
+  margin: 0 10%;
+}
+

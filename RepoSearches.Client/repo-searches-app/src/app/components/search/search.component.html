@@ -1,0 +1,12 @@
+<div>
+  <h2>GitHub Repositories</h2>
+
+  <div class="search-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Search Repositories</mat-label>
+      <input class="search-input" matInput (keyup.enter)="searchRepositories()" [(ngModel)]="searchQuery">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="searchRepositories()">Search</button>
+  <app-gallery [(ngModel)]="repositories" class="repo-list"></app-gallery>
+  </div>
+</div>
