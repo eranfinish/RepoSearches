@@ -37,6 +37,14 @@ public isAuthenticated$: Observable<boolean> = this.isAuthenticatedSubject.asObs
     );
   }
 
+  setAuthenticationStatus(isAuthenticated: boolean): void {
+    this.isAuthenticatedSubject.next(isAuthenticated);
+  }
+
+  // Optional: Function to get the current value (if needed)
+  getAuthenticationStatus(): boolean {
+    return this.isAuthenticatedSubject.getValue();
+  }
   login(credentials: any): Observable<{ token: string }> {
     console.log('Attempting login...');
     return this.http.post(`${this.apiUrl}/login`, credentials,
@@ -54,7 +62,8 @@ public isAuthenticated$: Observable<boolean> = this.isAuthenticatedSubject.asObs
           if (response.body && response.body['token']) {
             this.setCookie('token', response.body.token);
             this.isAuthenticated = true;
-            this.isAuthenticatedSubject.next(true);
+            this.setAuthenticationStatus(true);
+            //this.isAuthenticatedSubject.next(true);
           }
         }),
         catchError(error => {
@@ -73,6 +82,8 @@ private setCookie(name: string, value: string): void {
         next: () => {console.log('Logged out successfully');
         this.isAuthenticated = false;
         this.isAuthenticatedSubject.next(false);
+        this.setAuthenticationStatus(false);
+        
         },
         error: (err) => console.error('Logout failed:', err)
       });
@@ -90,7 +101,13 @@ private setCookie(name: string, value: string): void {
       {
         withCredentials: true,  // This goes here
         observe: 'response'     // This goes here
-      } );
+      } ).pipe(
+        tap(response => {
+          console.log('Register Response:', response);
+          console.log('Cookies after register:', document.cookie);
+          this.isAuthenticatedSubject.next(true);
+        })
+      );
   }
 
 

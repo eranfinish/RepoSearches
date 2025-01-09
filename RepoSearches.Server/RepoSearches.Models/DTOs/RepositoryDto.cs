@@ -41,5 +41,7 @@ namespace RepoSearches.Models.DTOs
 
         [JsonProperty("topics")]
         public List<string> Topics { get; set; }
+
+        public bool Bookmarked { get; set; }
     }
 }

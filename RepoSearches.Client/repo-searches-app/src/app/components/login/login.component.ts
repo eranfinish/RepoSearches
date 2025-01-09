@@ -33,8 +33,9 @@ export class LoginComponent {
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe(
 response => {
-  console.log('Login successful', response.token);
-  localStorage.setItem('token', response.token);
+  const responseBody = response as { token: string, body: any };
+  localStorage.setItem('user', JSON.stringify(responseBody.body));
+  localStorage.setItem('token', responseBody.token);
   this.router.navigate(['/search']);
   // Handle successful login, e.g., redirect to another page
 },

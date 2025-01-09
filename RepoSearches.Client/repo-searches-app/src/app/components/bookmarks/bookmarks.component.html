@@ -8,12 +8,13 @@
     {{ error }}
   </div>
 
-  <mat-list class="bookmark-list" *ngIf="bookmarks$ | async as bookmarks">
+  <mat-list class="bookmark-list" *ngIf="bookmarks">
     <ng-container *ngIf="bookmarks.length > 0; else noBookmarks">
       <app-repository
         *ngFor="let bookmark of bookmarks"
         [repository]="bookmark.repository"
-        (remove)="removeBookmark(bookmark.id, bookmark.repository.id)">
+
+     >
       </app-repository>
     </ng-container>
 

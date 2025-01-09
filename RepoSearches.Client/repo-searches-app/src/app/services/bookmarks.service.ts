@@ -4,48 +4,59 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Repository } from '../models/repository';
-
+import { Bookmark } from '../models/bookmark';
 @Injectable({
   providedIn: 'root'
 })
 export class BookmarksService {
   private apiUrl = 'https://localhost:7159/api/bookmarks';
-  private bookmarksSubject = new BehaviorSubject<Repository[]>([]);
+  private bookmarksSubject = new BehaviorSubject<Bookmark[]>([]);
   bookmarks$ = this.bookmarksSubject.asObservable();
 
   constructor(private http: HttpClient) { }
 
-  getBookmarks(): Observable<Repository[]> {
-    return this.http.get<Repository[]>(this.apiUrl, { withCredentials: true })
+  getBookmarks(): Observable<Bookmark[]> {
+
+  const bookmarks: Bookmark[] = JSON.parse(localStorage.getItem('bookmarks') ?? '[]');
+ if(bookmarks.length > 0){
+  this.bookmarksSubject.next(bookmarks);
+  return this.bookmarks$;
+}
+else{
+
+     return this.http.get<Bookmark[]>(this.apiUrl, { withCredentials: true })
       .pipe(
         tap(bookmarks => this.bookmarksSubject.next(bookmarks))
       );
+}
   }
 
-  addBookmark(repository: Repository): Observable<any> {
-    return this.http.post(this.apiUrl, repository, { withCredentials: true })
+  addBookmark(bookmark: Bookmark): Observable<any> {
+    return this.http.post(this.apiUrl, bookmark, { withCredentials: true })
       .pipe(
-        tap(() => {
+        tap((response) => {
+          localStorage.setItem('bookmarks', JSON.stringify(response));
           const currentBookmarks = this.bookmarksSubject.value;
-          this.bookmarksSubject.next([...currentBookmarks, repository ]);
+          this.bookmarksSubject.next([...currentBookmarks, bookmark ]);
         })
       );
   }
 
-  removeBookmark(id: number, repositoryId: number): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/bookmarks/${id}/${repositoryId}`,
+  removeBookmark(userId: number, repositoryId: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/bookmarks/${userId}/${repositoryId}`,
       { withCredentials: true })
       .pipe(
-        tap(() => {
+        tap((response) => {
+          localStorage.setItem('bookmarks', JSON.stringify(response));
           const currentBookmarks = this.bookmarksSubject.value;
           this.bookmarksSubject.next(
-            currentBookmarks.filter(b => b.id !== id)
+            currentBookmarks.filter(b => b.userId !== userId)
           );
         })
       );
   }
 
   isBookmarked(repositoryId: number): boolean {
-    return this.bookmarksSubject.value.some(b => b.id === repositoryId);
+    return this.bookmarksSubject.value.some(b => b.repositoryId === repositoryId);
   }
 }

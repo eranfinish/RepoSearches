@@ -3,11 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\controllers\\bookmarkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:controllers\\bookmarkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\services\\bookmarks\\bookmarksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\controllers\\bookmarkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:controllers\\bookmarkscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\repositorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\bookmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\bookmarkentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,8 +42,10 @@
       "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\services\\bookmarks\\ibookmarksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\helpers\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\repositoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\reposearches.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -33,22 +60,10 @@
       "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:controllers\\githubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\bookmarkentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB85A627-33A5-463B-96E9-0CCAE8B22AC1}|..\\RepoSearches.DAL\\RepoSearches.DAL.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.dal\\appdbcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\ownerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\repositoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\repositorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Handlers\\BasicAuthenticationHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -64,20 +79,11 @@
       "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\services\\auth\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\helpers\\authorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91B65555-8F3A-48EB-93E0-A3189B5CAA50}|..\\RepoSearches.Core\\RepoSearches.Core.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.core\\validators\\uservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\reposearches.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -86,12 +92,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FA31FBAF-396F-4AF0-82F8-6D0F42D55725}|RepoSearches.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\bookmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9923C35A-A151-4209-84AF-5EC290D3E800}|..\\RepoSearches.Models\\RepoSearches.Models.csproj|c:\\users\\finis\\source\\projects\\reposearches\\reposearches.server\\reposearches.models\\dtos\\ownerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -109,22 +109,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 178,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 274,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookmarksController.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\BookmarksController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookmarksController.cs",
-              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\BookmarksController.cs",
-              "RelativeToolTip": "Controllers\\BookmarksController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwEQAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\BookmarksController.cs*",
+              "RelativeToolTip": "Controllers\\BookmarksController.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAA2wBUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T21:31:57.685Z",
               "IsPinned": true,
@@ -132,13 +128,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T23:31:23.687Z",
               "IsPinned": true,
@@ -146,21 +142,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAASwI0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAzwJUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T01:09:57.214Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "RepoSearches.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\obj\\Debug\\net6.0\\RepoSearches.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net6.0\\RepoSearches.GlobalUsings.g.cs",
@@ -168,12 +168,11 @@
               "RelativeToolTip": "obj\\Debug\\net6.0\\RepoSearches.GlobalUsings.g.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T00:04:31.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T00:04:31.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -181,12 +180,11 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-31T15:34:36.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T15:34:36.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "RepoSearches.csproj",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\RepoSearches.csproj",
               "RelativeDocumentMoniker": "RepoSearches.csproj",
@@ -194,24 +192,22 @@
               "RelativeToolTip": "RepoSearches.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-31T15:32:09.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T15:32:09.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "RepoSearches",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\RepoSearches.csproj",
               "RelativeDocumentMoniker": "RepoSearches.csproj",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\RepoSearches.csproj",
               "RelativeToolTip": "RepoSearches.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-31T15:31:58.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T15:31:58.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Auth\\IAuthService.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Services\\Auth\\IAuthService.cs",
@@ -219,12 +215,11 @@
               "RelativeToolTip": "..\\RepoSearches.Core\\Services\\Auth\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:00:41.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T18:00:41.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\DTOs\\LoginDto.cs",
@@ -232,38 +227,24 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T11:51:42.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T11:51:42.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookmarkEntity.cs",
-              "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
-              "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
-              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
-              "RelativeToolTip": "..\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T19:37:31.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 9,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Entities\\UserEntity.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\UserEntity.cs",
               "RelativeToolTip": "..\\RepoSearches.Models\\Entities\\UserEntity.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA0wBUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T19:03:22.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "RepositoryEntity.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\RepositoryEntity.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Entities\\RepositoryEntity.cs",
@@ -284,8 +265,7 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\SearchResultDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T00:30:32.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T00:30:32.301Z"
             },
             {
               "$type": "Document",
@@ -297,18 +277,17 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\OwnerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T01:05:48.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T01:05:48.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "RepositoryDto.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\RepositoryDto.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\DTOs\\RepositoryDto.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\RepositoryDto.cs",
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\RepositoryDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T01:04:33.297Z",
               "EditorCaption": ""
@@ -323,12 +302,11 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\GitHubConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T23:57:50.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T23:57:50.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -336,12 +314,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-26T23:28:37.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-26T23:28:37.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "AppDbContext .cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.DAL\\AppDbContext .cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.DAL\\AppDbContext .cs",
@@ -354,20 +331,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 4,
               "Title": "BookmarkDto.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\BookmarkDto.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\DTOs\\BookmarkDto.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\BookmarkDto.cs",
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\BookmarkDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T22:25:30.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "GitHubController.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\Controllers\\GitHubController.cs",
               "RelativeDocumentMoniker": "Controllers\\GitHubController.cs",
@@ -380,20 +357,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "IBookmarksService.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Bookmarks\\IBookmarksService.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Services\\Bookmarks\\IBookmarksService.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Bookmarks\\IBookmarksService.cs",
               "RelativeToolTip": "..\\RepoSearches.Core\\Services\\Bookmarks\\IBookmarksService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T21:35:22.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "OwnerEntity.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\OwnerEntity.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Entities\\OwnerEntity.cs",
@@ -401,18 +378,17 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\Entities\\OwnerEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T19:01:28.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T19:01:28.315Z"
             }
           ]
         },
         {
-          "DockedWidth": 222,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 126,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "JwtMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches\\JwtHandler\\JwtMiddleware.cs",
               "RelativeDocumentMoniker": "JwtHandler\\JwtMiddleware.cs",
@@ -425,46 +401,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Auth\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Services\\Auth\\AuthService.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Auth\\AuthService.cs",
               "RelativeToolTip": "..\\RepoSearches.Core\\Services\\Auth\\AuthService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAYwE4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAA3wEsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T18:00:57.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\UserDto.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\DTOs\\UserDto.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\DTOs\\UserDto.cs",
               "RelativeToolTip": "..\\RepoSearches.Models\\DTOs\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T11:27:57.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 7,
               "Title": "UserValidator.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Validators\\UserValidator.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Validators\\UserValidator.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Validators\\UserValidator.cs",
               "RelativeToolTip": "..\\RepoSearches.Core\\Validators\\UserValidator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBQAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T11:26:43.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
+              "Title": "BookmarkEntity.cs",
+              "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
+              "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
+              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
+              "RelativeToolTip": "..\\RepoSearches.Models\\Entities\\BookmarkEntity.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T19:37:31.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "BasicAuthenticationHandler.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Handlers\\BasicAuthenticationHandler.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Handlers\\BasicAuthenticationHandler.cs",
@@ -472,25 +461,24 @@
               "RelativeToolTip": "..\\RepoSearches.Core\\Handlers\\BasicAuthenticationHandler.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T11:23:49.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T11:23:49.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 12,
               "Title": "AuthorizationMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Helpers\\AuthorizationMiddleware.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Helpers\\AuthorizationMiddleware.cs",
               "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Helpers\\AuthorizationMiddleware.cs",
               "RelativeToolTip": "..\\RepoSearches.Core\\Helpers\\AuthorizationMiddleware.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBUAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T11:23:09.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "Jwt.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Models\\Jwt.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Models\\Jwt.cs",
@@ -498,18 +486,17 @@
               "RelativeToolTip": "..\\RepoSearches.Models\\Jwt.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T10:45:28.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T10:45:28.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BookmarksService.cs",
               "DocumentMoniker": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs",
               "RelativeDocumentMoniker": "..\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs",
-              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs",
-              "RelativeToolTip": "..\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAjwGEAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\finis\\source\\Projects\\RepoSearches\\RepoSearches.Server\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs*",
+              "RelativeToolTip": "..\\RepoSearches.Core\\Services\\Bookmarks\\BookmarksService.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T21:13:55.756Z",
               "EditorCaption": ""

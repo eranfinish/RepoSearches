@@ -19,7 +19,7 @@ namespace AdApp.Core.Helpers
         private readonly IConfiguration _configuration;
         private readonly ILogger<AuthorizationMiddleware> _logger;
 
-        public AuthorizationMiddleware(ILogger<AuthorizationMiddleware> logger, RequestDelegate next, IConfiguration configuration)
+        public AuthorizationMiddleware(ILogger<AuthorizationMiddleware> logger, RequestDelegate next,  IConfiguration configuration)
         {
             _next = next;
             _configuration = configuration;

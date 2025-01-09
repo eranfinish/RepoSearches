@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepoSearches.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ae64df606437707730c49f483d12c0b6b7b06ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5467294adc00690da4629fd19908d692ba3a1d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepoSearches.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepoSearches.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

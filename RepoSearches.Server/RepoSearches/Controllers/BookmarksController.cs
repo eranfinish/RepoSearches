@@ -15,17 +15,17 @@ using RepoSearches.Core.Services.Bookmarks;
 [Authorize] // Ensure only authenticated users can access this controller
 public class BookmarksController : ControllerBase
 {
-    private readonly AppDbContext _context;
+   // private readonly AppDbContext _context;
     private readonly IBookmarksService _bookmarksService;
-    public BookmarksController(AppDbContext context, IBookmarksService bookmarksService)
+    public BookmarksController(IBookmarksService bookmarksService)
     {
-        _context = context;
+     //   _context = context;
         _bookmarksService = bookmarksService;
     }
 
     [Authorize]
     [HttpPost]//add Boomark
-    public async Task<IActionResult> BookmarkRepository([FromBody] RepositoryDto repositoryDto)
+    public async Task<IActionResult> BookmarkRepository([FromBody] BookmarkDto bookmark)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
@@ -36,8 +36,8 @@ public class BookmarksController : ControllerBase
 
         try
         {
-            await _bookmarksService.AddBookmarkAsync(userId, repositoryDto);
-            return Ok();
+            var bookmarks = await _bookmarksService.AddBookmarkAsync(userId, bookmark.Repository);
+            return Ok(bookmarks);
         }
         catch (Exception ex)
         {   //simulate Log exception
@@ -66,7 +66,7 @@ public class BookmarksController : ControllerBase
 
         try
         {
-            var bookmarks =  _bookmarksService.GetBookmarksAsync(userId);
+            var bookmarks =  await _bookmarksService.GetBookmarksAsync(userId);
             return Ok(bookmarks);
         }
         catch (Exception ex)
@@ -79,17 +79,17 @@ public class BookmarksController : ControllerBase
     }
 
     [Authorize]
-    [HttpDelete("bookmarks/{id}/{reposityId}")]
-    public  IActionResult RemoveBookmark(long id, long reposityId)
+    [HttpDelete("bookmarks/{userId}/{reposityId}")]
+    public async  Task<IActionResult> RemoveBookmark(long userId, long reposityId)
     {
-        var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        if (!long.TryParse(userIdString, out long userId))
-            return Unauthorized();
+       // var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+      //  if (!long.TryParse(userIdString, out long userId))
+       //     return Unauthorized();
 
         try
         {
-            _bookmarksService.RemoveBookmarkAsync(userId, reposityId);
-            return Ok();
+            var bookmarks = await _bookmarksService.RemoveBookmarkAsync(userId, reposityId);
+            return Ok(bookmarks);
         }
         catch (Exception ex)
         { 

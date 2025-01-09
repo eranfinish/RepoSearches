@@ -9,11 +9,11 @@ namespace RepoSearches.Core.Services.Bookmarks
 {
     public interface IBookmarksService
     {
-        Task AddBookmarkAsync(long owner, RepositoryDto repository);
+        Task<Object[]> AddBookmarkAsync(long owner, RepositoryDto repository);
 
         Task<object[]> GetBookmarksAsync(long userId);
 
-        Task RemoveBookmarkAsync(long userId, long repositoryId);
+        Task<Object[]> RemoveBookmarkAsync(long userId, long repositoryId);
         //public bool IsBookmarked(string owner, string repository)
         //{
         //    throw new NotImplementedException();

@@ -3,6 +3,9 @@ import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { BookmarksService } from '../../services/bookmarks.service';
 import { Observable } from 'rxjs';
+import { Repository } from 'src/app/models/repository';
+import { Bookmark } from 'src/app/models/bookmark';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-bookmarks',
@@ -16,11 +19,12 @@ export class BookmarksComponent implements OnInit {
   loading = false;
   error: string | null = null;
   bookmarks$: Observable<any> | undefined; // Declare as class property
-
+bookmarks: Bookmark[] = [];
 
   ngOnInit() {
     this.bookmarks$ = this.bookmarksService.bookmarks$;
     this.loadBookmarks();
+
   }
 
   loadBookmarks() {
@@ -28,7 +32,8 @@ export class BookmarksComponent implements OnInit {
     this.error = null;
 
     this.bookmarksService.getBookmarks().subscribe({
-      next: () => {
+      next: (response) => {
+       this.bookmarks = response;
         this.loading = false;
       },
       error: (err) => {
@@ -40,7 +45,9 @@ export class BookmarksComponent implements OnInit {
   }
 
   removeBookmark(id: number, repositoryId: number) {
-    this.bookmarksService.removeBookmark(id, repositoryId).subscribe({
+    userId: Number;
+    let user  = JSON.parse(localStorage.getItem('user') ?? '');
+    this.bookmarksService.removeBookmark(user.id, repositoryId).subscribe({
       next: () => {
         // Bookmark removed successfully
       },

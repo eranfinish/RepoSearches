@@ -13,11 +13,16 @@ export class AppComponent implements OnInit{
   constructor(private router: Router, private route: ActivatedRoute, private authService:AuthService) {}
   selected:string = '';
   title = 'repo-searches-app';
-  isLoggedIn  = this.authService.isAuthenticated$;
+  isLoggedIn  = false;
+
+
 
   ngOnInit(): void {
     //this.isLoggedIn.subscribe() = this.authService.isAuthenticated
     this.getCurrentRoutePath();
+    this.authService.isAuthenticated$.subscribe(auth =>{
+      this.isLoggedIn = auth;
+    });
 
   }
 

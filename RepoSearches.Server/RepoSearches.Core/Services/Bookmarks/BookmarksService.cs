@@ -8,6 +8,7 @@ using Newtonsoft.Json.Linq;
 using RepoSearches.DAL;
 using RepoSearches.Models.DTOs;
 using RepoSearches.Models.Entities;
+using Tweetinvi.Core.Extensions;
 
 namespace RepoSearches.Core.Services.Bookmarks
 {
@@ -20,7 +21,7 @@ namespace RepoSearches.Core.Services.Bookmarks
             _context = context;
         }
 
-        public async Task AddBookmarkAsync(long userId, RepositoryDto repositoryDto)
+        public async Task<Object[]> AddBookmarkAsync(long userId, RepositoryDto repositoryDto)
         {
             using var transaction = await _context.Database.BeginTransactionAsync();
 
@@ -84,6 +85,8 @@ namespace RepoSearches.Core.Services.Bookmarks
 
                 await _context.SaveChangesAsync();
                 await transaction.CommitAsync();
+
+                return await GetBookmarksAsync(userId);
             }
             catch (Exception ex)
             {
@@ -100,7 +103,7 @@ namespace RepoSearches.Core.Services.Bookmarks
 
          public async Task<Object[]> GetBookmarksAsync(long userId)
         {
-            Object[] res;
+          Object[] res;
             try { 
             // Fetch bookmarks with the associated repository and owner information
             var bookmarks = await _context.Bookmarks
@@ -112,12 +115,33 @@ namespace RepoSearches.Core.Services.Bookmarks
             // Convert to DTO array to return
             res = bookmarks.Select(b => new BookmarkDto
             {
+                UserId = b.UserId,
                 RepositoryId = b.RepositoryId,
-                RepositoryName = b.Repository.Name,
-                FullName = b.Repository.FullName,
-                HtmlUrl = b.Repository.HtmlUrl,
-                // Null check with ternary operator to handle possible null owner
-                OwnerLogin = b.Repository.Owner != null ? b.Repository.Owner.Login : "Unknown"
+                CreatedAt = b.CreatedAt,
+                Repository = new RepositoryDto(){
+                   Id = b.Repository.Id,
+                   Name = b.Repository.Name,
+                   FullName = b.Repository.FullName,
+                   Owner = new OwnerDto()
+                   {
+                       AvatarUrl = b.Repository.Owner.AvatarUrl,
+                       HtmlUrl = b.Repository.Owner.HtmlUrl,
+                       Id = b.Repository.Owner.Id,
+                       Login = b.Repository.Owner.Login
+                   },
+                   HtmlUrl = b.Repository.HtmlUrl,
+                   Description = b.Repository.Description,
+                   Language = b.Repository.Language,
+                   ForksCount = b.Repository.ForksCount  ,
+                   Bookmarked = true
+                },
+                
+                //RepositoryName = b.Repository.Name,
+            //    FullName = b.Repository.FullName,
+            //    HtmlUrl = b.Repository.HtmlUrl,
+            //    // Null check with ternary operator to handle possible null owner
+            //    OwnerLogin = b.Repository.Owner != null ? b.Repository.Owner.Login : "Unknown"
+                
             }).ToArray<Object>();
 
                 return res;
@@ -133,13 +157,11 @@ namespace RepoSearches.Core.Services.Bookmarks
         }
 
 
-        public async Task RemoveBookmarkAsync(long userId, long repositoryId)
+        public async Task<Object[]> RemoveBookmarkAsync(long userId, long repositoryId)
         {
-            using var transaction = await _context.Database.BeginTransactionAsync();
-
             try
             {
-                // Find the bookmark using the composite key
+                // Find the bookmark
                 var bookmark = await _context.Bookmarks
                     .FirstOrDefaultAsync(b => b.UserId == userId && b.RepositoryId == repositoryId);
 
@@ -148,32 +170,25 @@ namespace RepoSearches.Core.Services.Bookmarks
                     throw new InvalidOperationException("Bookmark not found.");
                 }
 
-                // Check if it's the last bookmark for the repository
-                bool isLastBookmark = !await _context.Bookmarks
-                    .AnyAsync(b => b.RepositoryId == repositoryId && b.UserId != userId);
+                // Remove the bookmark
 
-                // Remove the repository if it's no longer bookmarked
-                if (isLastBookmark)
+
+                // Check if the repository is still bookmarked
+                bool isExists =  await _context.Repositories.AnyAsync(r => r.Id == repositoryId);
+                if (isExists)
                 {
-                    var repository = await _context.Repositories
-                        .FirstOrDefaultAsync(r => r.Id == repositoryId);
-
+                    var repository = await _context.Repositories.FindAsync(repositoryId);
                     if (repository != null)
                     {
                         _context.Repositories.Remove(repository);
                     }
                 }
-
-                // Remove the bookmark
-                _context.Bookmarks.Remove(bookmark);
-
-                // Save changes and commit transaction
-                await _context.SaveChangesAsync();
-                await transaction.CommitAsync();
+   _context.Bookmarks.Remove(bookmark);
+                await _context.SaveChangesAsync(); // Ensure this runs within a valid scope
+                return await GetBookmarksAsync(userId);
             }
             catch (Exception ex)
             {
-                await transaction.RollbackAsync();
                 throw new Exception("Error removing bookmark", ex);
             }
         }

@@ -42,6 +42,11 @@ builder.Services.AddCors(options =>
             .WithExposedHeaders("Set-Cookie");  // Add this line
     });
 });
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+    .LogTo(Console.WriteLine, LogLevel.Information));
+
 // Add services to the container.
 builder.Services.AddScoped<services.Bookmarks.IBookmarksService, services.Bookmarks.BookmarksService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -84,9 +89,6 @@ builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-    .LogTo(Console.WriteLine, LogLevel.Information));
 
 // Bind the GitHub configuration
 builder.Services.AddOptions<GitHubConfig>()

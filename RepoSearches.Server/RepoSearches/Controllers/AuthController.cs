@@ -138,11 +138,9 @@ namespace RepoSearches.Controllers
                
                 user.JwtToken = string.Empty;
                 user.Password = string.Empty;
-                var response = new Dictionary<string, Object>();
-                response["user"] = user;
-                response["message"] = "Login successful";
+               
                 
-                return Ok(response);
+                return Ok(user);
             }
             catch (Exception ex)
             {   //simulate Log exception
