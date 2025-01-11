@@ -15,53 +15,27 @@ using Microsoft.AspNetCore.Http;
 using AdApp.Core.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.Cookie.Name = "token"; 
-       // options.Cookie.HttpOnly = true;
-        options.Cookie.HttpOnly = false;
-        options.Cookie.SameSite = SameSiteMode.None;
-        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  // Changed to Always      
-        options.LoginPath = "/login"; // login path
-        options.LogoutPath = "/logout"; // logout path
-
-    });
-// Define CORS policy
-
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy
-            .WithOrigins("https://localhost:4200")
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials()
-            .WithExposedHeaders("Set-Cookie");  // Add this line
-    });
-});
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-    .LogTo(Console.WriteLine, LogLevel.Information));
-
-// Add services to the container.
-builder.Services.AddScoped<services.Bookmarks.IBookmarksService, services.Bookmarks.BookmarksService>();
-builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddSingleton<TokenValidationParameters>();
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 builder.Services.Configure<JwtSettings>(jwtSettings);
-
 var key = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
+
 
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
+}) .AddCookie(options =>
+    {
+        options.Cookie.Name = "token"; 
+       // options.Cookie.HttpOnly = true;
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SameSite = SameSiteMode.None;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  // Changed to Always      
+        options.LoginPath = "/login"; // login path
+        options.LogoutPath = "/logout"; // logout path
+
+    })
 .AddJwtBearer(options =>
 {
     options.RequireHttpsMetadata = false; // Set to true in production
@@ -78,7 +52,38 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero
     };
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var token = context.Request.Cookies["token"];
+            context.Token = token;
+            return Task.CompletedTask;
+        }
+    };
 });
+
+
+// Define CORS policy
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .WithOrigins("https://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithExposedHeaders("Set-Cookie");  // Add this line
+    });
+});
+// Add services to the container.
+builder.Services.AddScoped<services.Bookmarks.IBookmarksService, services.Bookmarks.BookmarksService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddSingleton<TokenValidationParameters>();
+
 
 builder.Services.AddControllers()
     .AddFluentValidation(static fv => fv.RegisterValidatorsFromAssemblyContaining<UserValidator>());
@@ -89,6 +94,9 @@ builder.Services.AddHttpClient();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+    .LogTo(Console.WriteLine, LogLevel.Information));
 
 // Bind the GitHub configuration
 builder.Services.AddOptions<GitHubConfig>()

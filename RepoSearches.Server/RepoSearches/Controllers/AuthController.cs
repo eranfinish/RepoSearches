@@ -105,14 +105,14 @@ namespace RepoSearches.Controllers
             _logger.LogInformation("Setting auth token cookie. Token length: {Length}", token.Length);
             Response.Cookies.Append("token", token, new CookieOptions
             {
-                HttpOnly = false,  // Must be false to be readable by JavaScript
+                HttpOnly = true,  // Must be false to be readable by JavaScript
                 Secure = true,
                 Expires = DateTime.UtcNow.AddHours(24),
                 SameSite = SameSiteMode.None,
                 Domain = "localhost",
                 Path = "/"
             });
-            Response.Headers.Add("X-Debug-Token", "Token-Set");
+          //  Response.Headers.Add("X-Debug-Token", "Token-Set");
             //   Response.Cookies.Append("token", token, cookieOptions);
             //_logger.LogInformation("Cookie set with options: {@Options}", cookieOptions);
         }
