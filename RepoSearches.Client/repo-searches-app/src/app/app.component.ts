@@ -21,6 +21,7 @@ export class AppComponent implements OnInit{
     //this.isLoggedIn.subscribe() = this.authService.isAuthenticated
     this.getCurrentRoutePath();
     this.authService.isAuthenticated$.subscribe(auth =>{
+      console.log('Is Authenticated:', auth);
       this.isLoggedIn = auth;
     });
 
@@ -43,6 +44,7 @@ export class AppComponent implements OnInit{
     this.router.navigate(['/login']);
   }
 login(){
+  this.authService.setLoggedIn(true);
   this.router.navigate(['/login']);
 }
 

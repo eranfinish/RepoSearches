@@ -18,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 import { GitHubService } from './services/GitHub/github.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BookmarksComponent } from './components/bookmarks/bookmarks.component';
@@ -49,6 +51,7 @@ const routes: Routes = [];
     MatListModule,
     MatIconModule,
     MatCardModule,
+    MatProgressSpinnerModule,
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
      AuthInterceptor, AuthGuard, GitHubService,AuthService, BookmarksService,

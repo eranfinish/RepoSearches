@@ -27,10 +27,12 @@ public isAuthenticated$: Observable<boolean> = this.isAuthenticatedSubject.asObs
       `${this.apiUrl}/check-auth`,{ withCredentials: true })
       .pipe(
               map(response => {
+                this.isAuthenticatedSubject.next(true);
                         this.isAuthenticated = true;
         return true;
       }),
       catchError(() => {
+        this.isAuthenticatedSubject.next(false);
         this.isAuthenticated = false;
         return of(false);
       })
@@ -83,7 +85,7 @@ private setCookie(name: string, value: string): void {
         this.isAuthenticated = false;
         this.isAuthenticatedSubject.next(false);
         this.setAuthenticationStatus(false);
-        
+
         },
         error: (err) => console.error('Logout failed:', err)
       });

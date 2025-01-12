@@ -11,6 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoginComponent {
   loginForm: FormGroup;
   errorMessage: string = '';
+isLoading: boolean = false;
 
   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router,private route: ActivatedRoute) {
     this.loginForm = this.fb.group({
@@ -30,19 +31,24 @@ export class LoginComponent {
     }
   }
   onSubmit() {
-    if (this.loginForm.valid) {
-      this.authService.login(this.loginForm.value).subscribe(
-response => {
-  const responseBody = response as { token: string, body: any };
-  localStorage.setItem('user', JSON.stringify(responseBody.body));
-  localStorage.setItem('token', responseBody.token);
-  this.router.navigate(['/search']);
-  // Handle successful login, e.g., redirect to another page
-},
-        error => {
-          this.errorMessage = 'Invalid username or password';
-        }
-      );
+    if(this.loginForm.valid){
+      this.isLoading = true;
+      if (this.loginForm.valid) {
+        this.authService.login(this.loginForm.value).subscribe(
+  response => {
+    const responseBody = response as { token: string, body: any };
+    localStorage.setItem('user', JSON.stringify(responseBody.body));
+    localStorage.setItem('token', responseBody.token);
+    this.router.navigate(['/search']);
+    this.isLoading = false;//close the spinner
+    // Handle successful login, e.g., redirect to another page
+  },
+          error => {
+            this.errorMessage = 'Invalid username or password';
+            this.isLoading = false;//close the spinner
+          }
+        );
+      }
     }
   }
 }

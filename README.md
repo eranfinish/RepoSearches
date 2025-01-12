@@ -8,7 +8,7 @@ This project implements a simple web application for searching GitHub repositori
 2. **Bookmarking**: Users can bookmark repositories for later access.
 3. **Multi-Device Support**: The backend supports user-specific session management for bookmarks.
 4. **Secure Communication**: Implements JWT-based authentication between the client and server.
-5. **Authentication**: Includes an `AuthController` and `AuthService` using JWT with HttpOnly Cookies for production.
+5. **Authentication**: Includes an `AuthController` and `AuthService` using JWT with HttpOnly Cookies.
    - Angular implements an `AuthGuard`, `AuthInterceptor`, and `HttpInterceptor` to manage authentication and protect routes.
 6. **Login and Registration**: Includes `LoginComponent` and `RegisterComponent` for user authentication.
 7. **Gallery Component**: Integrated into the `SearchComponent` to display search results as a gallery.
@@ -18,7 +18,7 @@ This project implements a simple web application for searching GitHub repositori
 ## Technologies Used
 - **Frontend**: Angular (v8+), Angular Material
 - **Backend**: .NET Core (6 or 8), C#
-- **UI Framework**: Bootstrap, Angular Material
+- **UI Framework**: Angular Material
 - **HTTP Client**: `IHttpClientFactory`
 
 ---
@@ -33,7 +33,7 @@ This project implements a simple web application for searching GitHub repositori
    - `AuthController`: Handles user authentication and JWT management.
 2. **Services**:
    - Configured `IHttpClientFactory` for HTTP requests.
-   - `AuthService`: Manages JWT creation and validation, storing tokens in HttpOnly cookies for secure production use.
+   - `AuthService`: Manages JWT creation and validation, storing tokens in HttpOnly cookies for secure.
 3. **Database**:
    - Example schema for bookmarks using EF Core.
 4. **Authentication**:

@@ -8,10 +8,10 @@ import { AuthGuard } from './services/auth.guard';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'search', component: SearchComponent },
-  { path: 'bookmarks', component: BookmarksComponent },
- // { path: 'search', component: SearchComponent, canActivate: [AuthGuard] },
- // { path: 'bookmarks', component: BookmarksComponent, canActivate: [AuthGuard] },
+  //{ path: 'search', component: SearchComponent },
+  //{ path: 'bookmarks', component: BookmarksComponent },
+ { path: 'search', component: SearchComponent, canActivate: [AuthGuard] },
+  { path: 'bookmarks', component: BookmarksComponent, canActivate: [AuthGuard] },
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Default route goes to login
   { path: '**', redirectTo: '/login' } // Wildcard route also goes to login
 ];
