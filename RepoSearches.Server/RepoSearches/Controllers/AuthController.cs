@@ -1,21 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using BCrypt.Net;
-using RepoSearches.DAL;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using RepoSearches.Models.DTOs;
-using RepoSearches.Models.Entities;
 using RepoSearches.Models;
 using RepoSearches.Core.Services.Auth;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Authorization;
-using Newtonsoft.Json.Linq;
 
 namespace RepoSearches.Controllers
 {
@@ -129,7 +117,7 @@ namespace RepoSearches.Controllers
 
                 var user = await _authService.LoginAsync(loginDto);
               
-                if (user.JwtToken == null)
+                if (user is null || user.JwtToken is null)
                     return Unauthorized("Invalid credentials");
 
                 // Set the token as an HTTP-only cookie

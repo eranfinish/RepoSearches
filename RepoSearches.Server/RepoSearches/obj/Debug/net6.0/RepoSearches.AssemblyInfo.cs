@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepoSearches")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+965c454fbffe7ec1d3c57695219a76fbd281d4f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bc8f9acde09ecdbd5940d9a5784ff32aa5f1b54")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepoSearches")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepoSearches")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
